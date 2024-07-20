@@ -1,0 +1,162 @@
+/* navbar responsive */
+
+@media (max-width: 750px){
+
+    /* navbar responsive  */
+    .ul-nav.responsive {
+        display: block;
+    }
+
+    .ul-nav.responsive li {
+        display: block;
+        text-align: center;
+    }
+
+    #menu-bar {
+        margin-left: 85%;
+        display: block;
+        position: fixed;
+        top: 2.3%;   
+        left: 6%;
+    }
+
+    .links-container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 56px;
+        background-color: black;
+    }
+
+    .li-navbar{
+        padding-bottom: 16px;
+        display: none;
+    }
+
+    .a-navbar{
+        text-decoration: none;
+        color: white;
+        padding: 12px 20px;
+        text-align: center;
+        transition: background-color 0.4s ease-in-out;
+    }
+
+    /* section 2 */
+    .second-page{
+        padding-bottom: 30px;
+    }
+    .the-band-p{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .member-div{
+        margin-bottom: 30px;
+    }
+
+    /* section 4 */
+   
+    .contact-information{
+        margin-top: 20px;
+    }
+
+    .container-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-body-div {
+        gap: 60px;
+    }
+
+    .person-infor-input {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-inputs{
+       align-items: center;
+    }
+
+    .email-input, .name-input, .msg-input{
+        width: 100%;
+    }
+
+    .send-btn{
+        margin-top: 30px;
+    }
+
+    /* ticket modal */
+
+    /* ticket header  */
+
+    #ticket-modal {
+        width: 90%;
+    }
+
+    .ticket-heading-div {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .trip-icon{
+        padding-bottom: 40px;
+    }
+
+    .tick-h1{
+        font-size: 24px;
+    }
+
+    /* ticket body  */
+
+    .question-ticket-div {
+        margin-left: 28px;
+    }
+
+    .tickets-input {
+        width: 90%;
+    }
+
+    .pay-button{
+        width: 91%;
+        text-align: center;
+    }
+
+    .pay-button,
+    #close-button {
+        margin-left: 4%;
+    }
+
+}    
+
+
+@media (max-width: 480px){
+
+    /* slider  */
+
+   .city-img{
+       width: 100%;
+       height: 50vh;
+   }
+     
+   #close-button{
+    width: 22%;
+    }
+
+    /* section 4 */
+
+    .contact-body-div{
+        flex-direction: column;
+    }
+
+    .contact-inputs{
+        margin-top: -20px;
+    }
+
+    .email-input, .name-input, .msg-input{
+        width: 200px;
+    }
+}

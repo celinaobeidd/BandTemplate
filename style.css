@@ -1,0 +1,616 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Lato";
+}
+
+/* to scroll smoothly */
+
+html{
+    scroll-behavior: smooth;
+    color: white;
+    background-color: #181A1B;
+}
+
+/* SCROLL BAR CHANGING COLOR  */
+
+:root {
+    --scrollbar-track-color: #000; /* Black */
+    --scrollbar-thumb-color: #181A1B; /* Gray */
+}
+  
+::-webkit-scrollbar {
+    width: 12px;
+}
+  
+::-webkit-scrollbar-track {
+    background-color: var(--scrollbar-track-color);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-color);
+    border-radius: 6px;
+}
+  
+
+/* first page / section 1 */
+
+.first-page{
+   font-size: 15px;
+   line-height: 23px;
+   font-weight: 400;
+}
+
+/* navbar  */
+
+.nav-bar-div{
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;    
+}
+
+.ul-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12%;
+    height: 50px; 
+}
+
+.links-container{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    align-items: center;
+}
+
+.li-navbar{
+    list-style-type: none;
+}
+
+.a-navbar{
+   text-decoration: none;
+   color: white;
+   padding: 17px 40px;
+   transition: background-color 0.4s ease-in-out;
+}
+
+.a-navbar:hover{
+    background-color: #35393B;
+}
+
+#menu-bar{
+    display: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* SLIDE SHOW */
+
+.slider-container {
+    overflow: hidden; /* Hide overflow content */
+    width: 100%; /* Set the width of the slider container */
+}
+  
+.slider {
+    display: flex; 
+    transition: transform 0.5s ease-in-out; 
+}
+
+.slides{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.slides{
+    flex: 0 0 auto; 
+    width: 100%; 
+}
+  
+.slides img {
+    width: 100%; 
+    display: block; 
+}
+
+.city-content {
+    position: absolute;
+    text-align: center;
+    margin-bottom: 3%;
+    line-height: 40px;
+}
+
+.city-img{
+    width: 100%;
+    height: auto;
+}
+
+.city-h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.city-p{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* second page / section 2 */
+
+.second-page{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #181A1B;
+}
+
+.the-band-content{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.the-band-h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 45px;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.the-band-h3{
+   font-style: italic;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   font-family: "Lato";
+   color: rgb(161, 161, 156);
+   padding-top: 15px;
+   padding-bottom: 15px;
+}
+
+.the-band-p{
+    font-weight: 400;
+    text-align:left;
+    width: 60%;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.band-member{
+    display: flex;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member-div{
+    text-align: center;
+}
+
+.name-member{
+    font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 20px;
+}
+
+.img-member{
+    width: 75%;
+}
+
+/* third page / section 3 */
+
+.third-page{
+    background-color: black;
+    text-align: center;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.tour-dates-h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 5px;
+}
+
+.tour-dates-h3{
+   font-style: italic;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 23px;
+   font-family: "Lato";
+   color: rgb(161, 161, 156);
+   padding-top: 15px;
+   padding-bottom: 35px;
+}
+
+.month-status{
+    background-color: #181A1B;
+    width: 60%;
+    border: 1px solid #131618;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.container-months{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.month-span{
+    margin-left: 20px;
+    color: rgb(161, 161, 156);
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.month-status2{
+    border-bottom: none;
+}
+
+.status1{
+    margin-left: 20px;
+    background-color: #A91F1E;
+    padding: 4px 10px;
+}
+
+.month-status3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.status2{
+    margin-right: 40px;
+    font-size: 16px;
+    background-color: black;
+    padding:3px 10px;
+    border-radius: 50%;
+}
+
+/* container places */
+
+.container-places{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding-bottom: 45px;
+}
+
+.img-place{
+    width: 260px;
+}
+
+.place-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.place-content{
+    background-color: #181A1B;
+    padding: 18px 0px;
+    text-align: left;
+    padding-left: 14px;
+}
+
+.place-h1{
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 23px;
+}
+
+.placedate-h3{
+    font-size: 15px;
+    font-weight: 400;
+    color: rgb(161, 161, 156);
+    line-height: 23px;
+    padding: 12px 0px;
+}
+
+.place-description{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+#buy-button{
+    font-size: 15px;
+    font-weight: 400;
+    background-color: black;
+    border: none;
+    padding: 10px 18px;
+    transition: background-color 0.4s ease-in-out;
+    color: white;
+}
+
+#buy-button:hover{
+    background-color: #35393B;
+}
+
+/* ticket modal */
+
+#ticket-modal{
+    width: 60%;
+    display: block;
+    display: none;
+}
+
+.ticket-modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.ticket-heading-div{
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.material-symbols-outlined{
+    padding-top: 12px;
+}
+
+.header-x{
+    text-align: right;
+    font-size: 40px;
+    padding-right: 16px;
+    transition: color 0.4s ease-in-out;
+}
+
+.header-x:hover{
+    cursor: pointer;
+    color: #35393B;
+}
+
+.tick-h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    padding-bottom: 30px;
+}
+
+.header-div{
+    background-color: #38786D;
+}
+
+.body-div{
+    background-color: #181A1B;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+}
+
+.question-ticket-div{
+    display: flex;
+    margin-left: 18px;
+}
+
+.question-ticket-h3{
+    padding-top: 14px;
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.tickets-input{
+    width: 96%;
+    margin-top: 10px;
+    padding-left: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    color: rgb(161, 161, 156);
+    background-color: #35393B;
+}
+
+.ticket-div-2{
+    margin-top: 6px;
+}
+
+.pay-button{
+    width: 97%;
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #38786D;
+    border: none;
+    padding: 12px;
+    margin-top: 18px;
+    transition: background-color 0.4s ease-in-out;
+    color: white;
+    margin-top: 20px;
+}
+
+.pay-button:hover{
+    background-color: #35393B;
+}
+
+#close-button{
+    width: 14%;
+    margin-top: 22px;
+    margin-left: 14px;
+    background-color: #A91F1E;
+    border: none;
+    margin-bottom: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    color: white;
+    transition: background-color 0.4s ease-in-out;
+}
+
+#close-button:hover{
+    background-color: #35393B;
+    cursor: pointer;
+}
+
+.close-x{
+    padding-left: 6px;
+    font-weight: 900;
+}
+
+/* fourth page / section 4 */
+
+.fourth-page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    width: 100%;
+    background-color: #181A1B;
+}
+
+.container-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.contact-h1{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 45px;
+    font-weight: 400;
+    letter-spacing: 5px;
+}
+
+.contact-h3{
+    font-weight: 400;
+    color: rgb(161, 161, 156);
+    font-size: 15px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 18px;
+}
+
+.contact-body-div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.location, .phone, .email{
+    display: flex;
+}
+
+.location-heading, .phone-heading, .email-heading{
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 12px;
+    padding-left: 6px;
+}
+
+.person-infor-input{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.name-input, .email-input {
+    color: rgb(161, 161, 156);
+    border: none;
+    padding: 10px 8px; /* Adjust padding as needed */
+    flex: 1; /* Let inputs grow to fill available space */
+    width: 180px; /* Set a max-width to prevent inputs from stretching too much */
+    background-color: #35393B;
+}
+  
+.msg-input {
+    color: rgb(161, 161, 156);
+    border: none;
+    padding: 10px 8px; /* Adjust padding as needed */
+    width: 96%; /* Use width for msg-input */
+    background-color: #35393B;
+}
+
+.contact-inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 14px;
+}
+
+.send-btn {
+    font-weight: 400;
+    font-size: 15px;
+    background-color: black;
+    border: none;
+    padding: 12px 16px;
+    transition: background-color 0.4s ease-in-out;
+    margin-top: 16px;
+    color: white;
+}
+
+.send-btn:hover {
+    background-color: #35393B;
+}
+
+/* fifth page / section 5 */
+
+.img-map{
+    width: 100%;
+    height: 100%;
+}
+
+/* last page  */
+
+.last-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    color: rgb(149,148,147);
+    background-color: #181A1B;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.icons:hover{
+    cursor: pointer;
+    color: #596064;
+}
+
+.programmer{
+    margin-top: 20px;
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+}
+
